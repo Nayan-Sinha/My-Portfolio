@@ -67,7 +67,7 @@
     object-fit: cover;
     border-radius: 50%;
     margin: 0 auto 20px auto;
-    display: block;
+    display: flex;
   }
 
   /*----------- Profile widget ends --------------*/
