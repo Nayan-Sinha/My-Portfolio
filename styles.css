@@ -31,9 +31,6 @@
     animation-duration:5s;
   }
   
-  h1 {
-    font-family:monospace;
-  }
   
   @keyframes slide {
     0% {
@@ -73,7 +70,7 @@
   /*----------- Profile widget ends --------------*/
 
   nav{
-    background: #171c24;
+    background-color: rgba(255, 255, 255, .15);  
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -86,7 +83,7 @@
     text-decoration: none;
     font-size: 30px;
     font-weight: 600;
-    letter-spacing: -1px;
+    letter-spacing: 0;
   }
   nav .nav-items{
     display: flex;
@@ -103,14 +100,17 @@
     font-weight: 500;
     text-decoration: none;
   }
+  /*-----------------------------------------*/
   nav .nav-items li a:hover{
-    color: #468eec;
+    color: #1df5ea;
   }
+  /*-----------------------------------------*/
+
   nav form{
     display: flex;
     height: 40px;
     padding: 2px;
-    background: #1e232b;
+    background: rgba(255, 255, 255,.20);
     min-width: 18%!important;
     border-radius: 2px;
     border: 1px solid rgba(155,155,155,0.2);
@@ -125,11 +125,13 @@
     font-weight: 500;
     background: none;
   }
+  
+  /*-------------nav bar search box --------------*/
   nav form button{
     padding: 0 15px;
     color: #fff;
     font-size: 17px;
-    background: #468eec;
+    background: #81ace4;
     border: none;
     border-radius: 2px;
     cursor: pointer;
@@ -137,10 +139,11 @@
   nav form button:hover{
     background: #468eec;
   }
+  /*-------------nav bar search box --------------*/
   nav .menu-icon,
   nav .cancel-icon,
   nav .search-icon{
-    width: 40px;
+    width: 30px;
     text-align: center;
     margin: 0 50px;
     font-size: 18px;
@@ -153,12 +156,12 @@
   nav .search-icon{
     display: none;
   }
-  @media (max-width: 1245px) {
+  @media (max-width: 1024px) {
     nav{
       padding: 0 50px;
     }
   }
-  @media (max-width: 1140px){
+  @media (max-width: 768px){
     nav{
       padding: 0px;
     }
@@ -166,6 +169,7 @@
       flex: 2;
       text-align: center;
     }
+    /*-------------- Mobile slide menu box -------------*/
     nav .nav-items{
       position: fixed;
       z-index: 99;
@@ -175,7 +179,8 @@
       height: 100%;
       padding: 10px 50px 0 50px;
       text-align: center;
-      background: #14181f;
+      background-color: rgba(255, 255, 255, .15);  
+      backdrop-filter: blur(5px);
       display: inline-block;
       transition: left 0.3s ease;
     }
