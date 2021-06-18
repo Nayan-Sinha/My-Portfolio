@@ -8,6 +8,9 @@
   /*----------- Background Animation Starts --------------*/
   body {
     margin:0;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
   }
   
   .bg {
@@ -60,14 +63,8 @@
 
   .profile_pic{
     width: 200px;
-    height:200px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin: 0 auto 20px auto;
-    display: flex;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    clip-path: circle();
+
   }
 
   /*----------- Profile widget ends --------------*/
