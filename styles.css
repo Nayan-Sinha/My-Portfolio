@@ -63,6 +63,7 @@
 
   .profile_pic{
     width: 200px;
+    height: auto;
     clip-path: circle();
 
   }
