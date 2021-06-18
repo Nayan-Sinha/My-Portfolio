@@ -65,6 +65,9 @@
     border-radius: 50%;
     margin: 0 auto 20px auto;
     display: flex;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
   }
 
   /*----------- Profile widget ends --------------*/
